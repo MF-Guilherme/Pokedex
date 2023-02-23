@@ -2,6 +2,9 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image, ImageTk
 from dados import *
+import random
+
+lista_pokemons = ['Pikachu', 'Bulbasaur', 'Charmander', 'Gengar', 'Dragonite', 'Gyarados']
 
 ######### cores ########
 
@@ -157,9 +160,7 @@ botao_pokemon_6 = Button(janela, command=lambda:trocar_pokemon('Dragonite'), ima
 botao_pokemon_6.place(x=375, y=310)
 
 
-#pegando um pokemon aleatóro para iniciar a pokedex
-import random
-lista_pokemons = ['Pikachu', 'Bulbasaur', 'Charmander', 'Gengar', 'Dragonite', 'Gyarados']
+#pegando um pokemon aleatóro na lista de pokemons para iniciar a pokedex
 pokemon_escolhido = random.sample(lista_pokemons, 1)
 
 #iniciando o programa
